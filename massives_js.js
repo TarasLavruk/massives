@@ -232,12 +232,12 @@
 
 // HW 4
 
-// let stuff = [
-// 	{name: "Yura", age: 55, hobby: ["films", "games", "hiking"], type: "Admin"}, 
-// 	{name: "Vasya", age: 32, hobby: ["films", "climbing", "sailing"], type: "User"}, 
-// 	{name: "Igor", age: 48, hobby: ["running", "games", "cycling"], type: "Admin"},
-// 	{name: "Stepan", age: 29, hobby: ["reading", "games", "skiing"], type: "User"}
-// ];
+let stuff = [
+	{name: "Yura", age: 55, hobby: ["films", "games", "hiking"], type: "Admin"}, 
+	{name: "Vasya", age: 32, hobby: ["films", "climbing", "sailing"], type: "User"}, 
+	{name: "Igor", age: 48, hobby: ["running", "games", "cycling"], type: "Admin"},
+	{name: "Stepan", age: 29, hobby: ["reading", "games", "skiing"], type: "User"}
+];
 
 // let admins = [];
 // for(let i = 0; i < stuff.length; i++) {
@@ -271,19 +271,20 @@
 // something went wrong and i can't catch)!!!!
 
 // let allHobbies = [];
-// stuff.forEach(element => {
-// 	allHobbies.push(element.hobby);
-// });
+// for(let o = 0; o < stuff.length; o++) {
+// 	allHobbies = allHobbies.concat(stuff[o].hobby);
+// };
+// console.log(allHobbies);
 // let unique = [];
-// let x = 0;
-// for(let i = 0; i < allHobbies.length; i++) {
-// 		for(let j = 0; j < allHobbies.length; j++) {
-// 		if((allHobbies[i] == allHobbies[j]) && (i != j)) {
-// 			x++
-// 		}
-// 			if(x == 0) {
+// let count = 0;
+// for(let i = 0; i < allHobbies.length - 1; i++) {
+// 	// let x = 0;
+// 	for(let j = 0; j < allHobbies.length; j++) {
+// 		if((allHobbies[i] === allHobbies[j]) && (i != j))  
+// 			{ count++ };
+// 				if(count == 0) {
 // 			unique.push(allHobbies[i])
 // 		};
 // 	}
 // }
-// alert(`Unique hobbies are: ${unique}`);
+// console.log(unique);
